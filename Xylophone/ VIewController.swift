@@ -33,7 +33,7 @@ class ViewController: UIViewController{
     func playSound() {
         
         // Get the path for the audio file
-        let soundURL = Bundle.main.url(forResource: note, withExtension: "wav")!
+        let soundURL = Bundle.main.url(forResource: "note1", withExtension: "wav")!
         
         // Catch any errors
         do {
