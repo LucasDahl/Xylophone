@@ -26,14 +26,14 @@ class ViewController: UIViewController{
         let selectedSoundFileName : String = soundArray[sender.tag - 1]
         
         // Plays the sound
-        playSound()
+        playSound(selectedSoundFileName)
         
     }
     
-    func playSound() {
+    func playSound(_ note:String) {
         
         // Get the path for the audio file
-        let soundURL = Bundle.main.url(forResource: "note1", withExtension: "wav")!
+        let soundURL = Bundle.main.url(forResource: note, withExtension: "wav")!
         
         // Catch any errors
         do {
